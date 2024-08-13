@@ -1,38 +1,150 @@
-.App {
+
+.app {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.youtube-video {
+  margin: 20px auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.video-placeholder {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ddd;
+  height: 300px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #555;
+}
+
+
+.building-future {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.building-future h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.future-background {
+  background: url('./Assets/original.jpg') no-repeat center center;
+  background-size: cover;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-text {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.feature-text h2 {
+  font-size: 2.5rem;
+  color: black;
+  line-height: 1.3;
+}
+
+.feature-text .highlight {
+  color: #ff6347; 
+}
+
+
+.inspiration {
+  position: relative;
+  text-align: center;
   color: white;
+  margin: 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.inspiration-content {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inspiration-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
+
+.inspiration-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.inspiration-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.inspiration-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.try-button {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-shadow: none; 
+}
+
+.try-button:hover {
+  background-color: #555;
+}
+
